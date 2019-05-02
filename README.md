@@ -6,4 +6,11 @@ react - mobx project
 -  store testing best practice
 - async data handling in mobx store
 
-- only tht component will be render where store has been change using mobx
+## notes:
+- only tht component will be render where store has been change using mobx and mark with observer
+- for async action mark callback function of the promise with decorator @action  or use flow generator fn or use runInAction for typescript support 
+
+
+### to run the project
+- npm i
+- npm start [will bootstrap server and client]
