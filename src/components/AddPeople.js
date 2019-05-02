@@ -9,11 +9,12 @@ class AddPeople extends React.Component {
     }
 
     render() {
+        const { store } = this.props;
         return (
-            <React.Fragment>
-                <input type='text' onChange={e => this.setState({people:e.currentTarget.value})}/>
-                <button onClick={() =>this.props.store.peopleStore.addPeople(this.state.people)}>Submit</button>
-            </React.Fragment>
+            <div style={{ backgroundColor: store.pagePropertiesStore.colorNode }}>
+                <input type='text' onChange={e => this.setState({ people: e.currentTarget.value })} />
+                <button onClick={() => this.props.store.peopleStore.addPeople(this.state.people)}>Submit</button>
+            </div>
         )
     }
 
