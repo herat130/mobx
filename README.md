@@ -5,6 +5,7 @@ react - mobx project
 - how to combine multiple store [class based constructor approach : store/root.store.js]
 -  store testing best practice
 - async data handling in mobx store
+- work with event listner
 
 ## notes:
 - only tht component will be render where store has been change using mobx and mark with observer

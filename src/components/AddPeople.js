@@ -27,6 +27,12 @@ class AddPeople extends React.Component {
                 <div>
                     {allAPIPeople}
                 </div>
+                <br/>
+                <b>Resize Window</b>
+                <div>
+                    {store.pagePropertiesStore.windowWidth}
+                </div>
+                
             </div>
         )
     }

@@ -7,7 +7,7 @@ import { Provider } from 'mobx-react';
 import RootStore from './store/root.store';
 import {configure} from "mobx"
 // import ListPeople from './components/ListPeople';
-configure({enforceActions: true})
+// configure({enforceActions: true})
 const appStore = new RootStore();
 
 ReactDOM.render(
