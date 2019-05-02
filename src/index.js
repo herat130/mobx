@@ -4,11 +4,11 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { Provider } from 'mobx-react';
-import Store from './store/people.store';
+import RootStore from './store/root.store';
 import {configure} from "mobx"
 // import ListPeople from './components/ListPeople';
 configure({enforceActions: true})
-const appStore = new Store();
+const appStore = new RootStore();
 
 ReactDOM.render(
     <Provider store={appStore}>

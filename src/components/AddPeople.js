@@ -12,7 +12,7 @@ class AddPeople extends React.Component {
         return (
             <React.Fragment>
                 <input type='text' onChange={e => this.setState({people:e.currentTarget.value})}/>
-                <button onClick={() =>this.props.store.addPeople(this.state.people)}>Submit</button>
+                <button onClick={() =>this.props.store.peopleStore.addPeople(this.state.people)}>Submit</button>
             </React.Fragment>
         )
     }

@@ -8,14 +8,14 @@ class ListPeople extends React.Component{
 
     render(){
         const {store}= this.props;
-        const allPeopleList = store.people.map((v,i) =>{
+        const allPeopleList = store.peopleStore.people.map((v,i) =>{
             return <p key={i}>{v.name}</p>
         });
         return (
-            <React.Fragment>
-                <p> total peoples are : {store.peopleCount}</p>
+            <div style={{ backgroundColor:store.pagePropertiesStore.colorNode}}>
+                <p> total peoples are : {store.peopleStore.peopleCount}</p>
                 {allPeopleList}
-            </React.Fragment>
+            </div>
         )
     }
 
